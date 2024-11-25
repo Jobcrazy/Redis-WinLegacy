@@ -1,12 +1,6 @@
-[![Windows Status](http://img.shields.io/appveyor/ci/MSOpenTech-lab/redis.svg?style=flat-square)](https://ci.appveyor.com/project/MSOpenTech-lab/redis) [![NuGet version](http://img.shields.io/nuget/v/redis-64.svg?style=flat-square)](http://www.nuget.org/packages/redis-64/) [![Chocolatey version](http://img.shields.io/chocolatey/v/redis-64.svg?style=flat-square)](http://www.chocolatey.org/packages/redis-64/) [![Chocolatey downloads](http://img.shields.io/chocolatey/dt/redis-64.svg?style=flat-square)](http://www.chocolatey.org/packages/redis-64/)
+## Redis on Legacy Windows 
 
-## Redis on Windows 
-
-- This is a port for Windows based on [Redis](https://github.com/antirez/redis).
-- We officially support the 64-bit version only. Although you can build the 32-bit version from source if desired.
-- You can download the latest unsigned binaries and the unsigned MSI installer from the [release page](http://github.com/MSOpenTech/redis/releases "Release page").
-- For releases prior to 2.8.17.1, the binaries can found in a zip file inside the source archive, under the bin/release folder.
-- Signed binaries are available through [NuGet](https://www.nuget.org/packages/Redis-64/) and [Chocolatey](https://chocolatey.org/packages/redis-64).
+- This is a modified version of [Redis](https://github.com/microsoftarchive/redis) for Windows XP and above.
 - Redis can be installed as a Windows Service.
 
 ## Windows-specific changes
@@ -15,17 +9,10 @@
 - Because Redis makes some assumptions about the values of file descriptors, we have built a virtual file descriptor mapping layer. 
 
 ## Redis release notes
-
-There are two current active branches: 2.8 and 3.0.
-
-- Redis on UNIX [2.8 release notes](https://raw.githubusercontent.com/antirez/redis/2.8/00-RELEASENOTES)
-- Redis on Windows [2.8 release notes](https://raw.githubusercontent.com/MSOpenTech/redis/2.8/Redis%20on%20Windows%20Release%20Notes.md)
 - Redis on UNIX [3.0 release notes](https://raw.githubusercontent.com/antirez/redis/3.0/00-RELEASENOTES)
 - Redis on Windows [3.0 release notes](https://raw.githubusercontent.com/MSOpenTech/redis/3.0/Redis%20on%20Windows%20Release%20Notes.md)
 
 ## How to configure and deploy Redis on Windows
-
-- [Memory Configuration for 2.8](https://github.com/MSOpenTech/redis/wiki/Memory-Configuration "Memory Configuration")
 - [Memory Configuration for 3.0](https://github.com/MSOpenTech/redis/wiki/Memory-Configuration-For-Redis-3.0 "Memory Configuration")
 - [Windows Service Documentation](https://raw.githubusercontent.com/MSOpenTech/redis/3.0/Windows%20Service%20Documentation.md "Windows Service Documentation")
 - [Redis on Windows](https://raw.githubusercontent.com/MSOpenTech/redis/2.8/Redis%20on%20Windows.md "Redis on Windows")
